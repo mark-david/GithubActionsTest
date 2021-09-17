@@ -39,6 +39,7 @@ jobs:
           echo Zip Package created
           ls
           echo
+          echo
           pwd
           
       - name: Push to S3
