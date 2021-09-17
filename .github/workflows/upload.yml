@@ -27,7 +27,7 @@ jobs:
         run: |
           echo Creating Control Panel Package
           mkdir control
-          rsync -rv --exclude=.git --exclude=.keep --exclude=control --exclude-.github . control
+          rsync -rv --exclude=.git --exclude=.keep --exclude=control --exclude=.github . control
           ls control
           echo Control Panel Folder created
       
