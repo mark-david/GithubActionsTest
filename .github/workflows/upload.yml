@@ -37,7 +37,9 @@ jobs:
           zip -r control.zip control
           mv control.zip Cloud3dPrint_Control_Panel_App_test.zip  
           echo Zip Package created
-          ls 
+          ls
+          echo
+          pwd
           
       - name: Push to S3
         run: |
