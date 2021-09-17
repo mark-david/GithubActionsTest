@@ -27,7 +27,7 @@ jobs:
         run: |
           echo Creating Control Panel Package
           mkdir control
-          rsync -rv --exclude=.git --exclude=.keep --exclude=control . control
+          rsync -rv --exclude=.git --exclude=.keep --exclude=control --exclude-.github . control
           ls control
           echo Control Panel Folder created
       
@@ -37,6 +37,7 @@ jobs:
           zip -r control.zip control
           mv control.zip Cloud3dPrint_Control_Panel_App_test.zip  
           echo Zip Package created
+          ls 
           
       - name: Push to S3
         run: |
