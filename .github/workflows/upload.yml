@@ -49,5 +49,5 @@ jobs:
           --form 'fileType="controlPanel"' \
           --form 'fileExtension="zip"' \
           --form 'file=@"/home/runner/work/GithubActionsTest/GithubActionsTest/Cloud3dPrint_Control_Panel_App_test.zip"')
-          echo result
+          echo $result
           
